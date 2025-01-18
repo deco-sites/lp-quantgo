@@ -2557,6 +2557,9 @@ html {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -2690,6 +2693,10 @@ html {
 .w-\[522px\] {
   width: 522px;
 }
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .w-full {
   width: 100%;
 }
@@ -2762,6 +2769,9 @@ html {
 }
 .max-w-\[80px\] {
   max-width: 80px;
+}
+.max-w-\[95\%\] {
+  max-width: 95%;
 }
 .max-w-full {
   max-width: 100%;
@@ -2953,6 +2963,9 @@ html {
 .rounded-2xl {
   border-radius: 1rem;
 }
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .rounded-\[16px\] {
   border-radius: 16px;
 }
@@ -3056,6 +3069,10 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(16 23 31 / var(--tw-bg-opacity));
 }
+.bg-light-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 116 255 / var(--tw-bg-opacity));
+}
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
@@ -3116,6 +3133,10 @@ html {
 .p-8 {
   padding: 2rem;
 }
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3163,6 +3184,10 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 .py-8 {
   padding-top: 2rem;
@@ -3255,6 +3280,10 @@ html {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.text-base\/5 {
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -3486,6 +3515,10 @@ html {
 
   .sm\:w-\[552px\] {
     width: 552px;
+  }
+
+  .sm\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .sm\:max-w-\[440px\] {
