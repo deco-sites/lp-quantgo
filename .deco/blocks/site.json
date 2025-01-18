@@ -1,13 +1,13 @@
 {
   "seo": {
     "type": "website",
-    "title": "Landing",
+    "title": "QuantGo",
     "jsonLDs": [],
     "noIndexing": false,
-    "description": "Improve your page performance with deco.cx",
-    "titleTemplate": "Landing | deco.cx",
-    "descriptionTemplate": "%s | Deco.cx",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/0fba8a8c-ee79-47e1-8f9d-863658d056cc",
+    "description": "Opere como os grandes fundos e proteja seu capital mesmo em cenários adversos.",
+    "titleTemplate": "QuantGo | Melhores soluções para o mercado financeiro",
+    "descriptionTemplate": "%s | QuantGo",
+    "favicon": "https://data.decoassets.com/lp-quantgo/3b5d57e4-e76c-4818-87ce-03af5bc7746d/403105-9ee79a77ad6a2d76575b92875641fb1b.ico",
     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/1350f37f-88ab-4cf1-bcf6-c386bcf8b238"
   },
   "global": [
@@ -30,5 +30,14 @@
   "firstByteThresholdMS": false,
   "theme": {
     "__resolveType": "Neutral"
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
   }
 }

@@ -1,42 +1,153 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
-      },
-      {
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
+        "title": "Melhores soluções para o mercado financeiro",
         "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
+        "description": "Opere como os grandes fundos e proteja seu capital mesmo em cenários adversos.",
+        "logo": {
+          "src": "https://data.decoassets.com/lp-quantgo/7269b7f9-88a8-49dc-bd83-9d46d708b8f4/quantgo.webp",
+          "alt": "Logo QuantGo",
+          "width": 91,
+          "height": 62
+        },
+        "registerButton": {
+          "href": "app.quantgo.com.br/register?from=deco",
+          "text": "Cadastre-se",
+          "title": "Cadastre-se aqui"
+        },
+        "loginButton": {
+          "href": "app.quantgo.com.br/login",
+          "text": "Entrar",
+          "title": "Entre aqui"
+        },
+        "image": {
+          "0": "h",
+          "1": "t",
+          "2": "t",
+          "3": "p",
+          "4": "s",
+          "5": ":",
+          "6": "/",
+          "7": "/",
+          "8": "d",
+          "9": "a",
+          "10": "t",
+          "11": "a",
+          "12": ".",
+          "13": "d",
+          "14": "e",
+          "15": "c",
+          "16": "o",
+          "17": "a",
+          "18": "s",
+          "19": "s",
+          "20": "e",
+          "21": "t",
+          "22": "s",
+          "23": ".",
+          "24": "c",
+          "25": "o",
+          "26": "m",
+          "27": "/",
+          "28": "l",
+          "29": "p",
+          "30": "-",
+          "31": "q",
+          "32": "u",
+          "33": "a",
+          "34": "n",
+          "35": "t",
+          "36": "g",
+          "37": "o",
+          "38": "/",
+          "39": "1",
+          "40": "6",
+          "41": "c",
+          "42": "5",
+          "43": "4",
+          "44": "9",
+          "45": "2",
+          "46": "8",
+          "47": "-",
+          "48": "1",
+          "49": "6",
+          "50": "c",
+          "51": "f",
+          "52": "-",
+          "53": "4",
+          "54": "3",
+          "55": "d",
+          "56": "8",
+          "57": "-",
+          "58": "b",
+          "59": "c",
+          "60": "1",
+          "61": "d",
+          "62": "-",
+          "63": "3",
+          "64": "1",
+          "65": "7",
+          "66": "6",
+          "67": "1",
+          "68": "6",
+          "69": "7",
+          "70": "0",
+          "71": "d",
+          "72": "9",
+          "73": "4",
+          "74": "4",
+          "75": "/",
+          "76": "i",
+          "77": "m",
+          "78": "a",
+          "79": "g",
+          "80": "e",
+          "81": "m",
+          "82": "_",
+          "83": "2",
+          "84": "0",
+          "85": "2",
+          "86": "5",
+          "87": "-",
+          "88": "0",
+          "89": "1",
+          "90": "-",
+          "91": "1",
+          "92": "8",
+          "93": "_",
+          "94": "1",
+          "95": "4",
+          "96": "5",
+          "97": "5",
+          "98": "1",
+          "99": "6",
+          "100": "9",
+          "101": "9",
+          "102": "7",
+          "103": ".",
+          "104": "p",
+          "105": "n",
+          "106": "g",
+          "src": "https://data.decoassets.com/lp-quantgo/87df7e36-ffab-4770-ba93-c4e16eab6fd6/imagem_2025-01-18_152717752.png",
+          "alt": "Marcado Financeiro",
+          "width": 1500,
+          "height": 779
+        },
+        "ctaButton": {
+          "href": "app.quantgo.com.br/register?from=deco",
+          "text": "Quero me cadastrar",
+          "title": "Cadastre-se"
+        }
       }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    },
+    {
+      "__resolveType": "Footer"
     }
-  }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -1,100 +1,98 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import { clx } from "site/sdk/clx.ts";
 
-export interface CTA {
-  id?: string;
+interface ImageProps {
+  src: ImageWidget;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+interface CTAProps {
   href: string;
   text: string;
-  outline?: boolean;
+  title: string
 }
 
 export interface Props {
-  /**
-   * @format rich-text
-   * @default Click here to tweak this text however you want.
-   */
+  logo: ImageProps;
+  registerButton: CTAProps;
+  loginButton: CTAProps;
   title?: string;
-  /**
-   * @default This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.
-   */
   description?: string;
-  image?: ImageWidget;
-  placement?: "left" | "right";
-  cta?: CTA[];
+  image?: ImageProps;
+  ctaButton: CTAProps;
 }
 
-const PLACEMENT = {
-  left: "flex-col text-left lg:flex-row-reverse",
-  right: "flex-col text-left lg:flex-row",
-};
 
 export default function HeroFlats({
-  title = "Click here to tweak this text however you want.",
-  description =
-    "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+  title,
+  description,
   image,
-  placement = "left",
-  cta = [
-    { id: "change-me-1", href: "/", text: "Change me", outline: false },
-    { id: "change-me-2", href: "/", text: "Change me", outline: true },
-  ],
+  ctaButton,
+  registerButton,
+  loginButton,
+  logo
 }: Props) {
   return (
-    <nav class="lg:container lg:mx-auto mx-4">
-      <div class="flex flex-col items-center gap-8">
-        <div
-          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
-            image
-              ? PLACEMENT[placement]
-              : "flex-col items-center justify-center text-center"
-          } lg:py-36 gap-12 md:gap-20 items-center`}
-        >
-          {image && (
-            <Image
-              width={640}
-              class="w-full lg:w-1/2 object-fit"
-              sizes="(max-width: 640px) 100vw, 30vw"
-              src={image}
-              alt={image}
-              decoding="async"
-              loading="lazy"
-            />
-          )}
-          <div
-            class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
-              image
-                ? "lg:w-1/2 lg:max-w-xl"
-                : "flex flex-col items-center justify-center lg:max-w-3xl"
-            }`}
-          >
-            <div
-              class="inline-block lg:text-[80px] text-4xl leading-none font-medium"
-              dangerouslySetInnerHTML={{
-                __html: title,
-              }}
+    <>
+      <section class="w-full bg-dark-blue lg:px-8 lg:pb-52">
+        <header class={clx(
+          "flex flex-col gap-5 w-full pt-5 pb-9 items-center",
+          "lg:mb-7 lg:max-w-4xl lg:mx-auto lg:flex-row lg:justify-between"
+        )}>
+          <Image
+            src={logo.src}
+            alt={logo.alt}
+            width={logo.width}
+            height={logo.height}
+            class="block max-auto"
+          />
+          <div class="flex gap-7 lg:flex-row-reverse">
+            <a
+              href={loginButton.href}
+              title={loginButton.title}
+              class={clx(
+                "flex items-center bg-white text-light-blue uppercase font-bold font-secondary text-xs px-6 py-1 rounded-full",
+                "hover:bg-light-blue hover:text-white"
+              )}
             >
-            </div>
-            <p class="text-lg md:text-md leading-[150%]">
-              {description}
-            </p>
-            <div class="flex items-center gap-3">
-              {cta?.map((item) => (
-                <a
-                  key={item?.id}
-                  id={item?.id}
-                  href={item?.href}
-                  target={item?.href.includes("http") ? "_blank" : "_self"}
-                  class={`font-normal btn btn-primary ${
-                    item.outline && "btn-outline"
-                  }`}
-                >
-                  {item?.text}
-                </a>
-              ))}
-            </div>
+              {loginButton.text}
+            </a>
+            <a
+              class="flex border-2 border-white text-white uppercase font-bold font-secondary text-xs px-6 py-1 rounded-full"
+              href={registerButton.href}
+              title={registerButton.title}
+            >
+              {registerButton.text}
+            </a>
           </div>
+        </header>
+        
+        <div class="flex flex-col 6 w-full items-center px-8 pb-6 gap-6">
+          <h1 class="font-bold font-primary text-white text-5xl text-center lg:max-w-xl">
+            {title}
+          </h1>
+          <p class="font-primary text-white text-base text-center lg:text-xl/tight">
+            {description}
+          </p>
+          <a
+            href={ctaButton.href}
+            title={ctaButton.title}
+            class={clx(
+              "flex items-center bg-white text-light-blue uppercase font-bold font-secondary text-sm px-6 py-2 rounded-full",
+              "hover:bg-light-blue hover:text-white",
+              "lg:py-3.5 lg:text-lg/tight"
+            )}
+          >
+            {ctaButton.text}
+          </a>
         </div>
-      </div>
-    </nav>
+      </section>
+      {image && (
+        <img src={image.src} alt={image.alt} class="w-full mx-auto max-w-lg lg:max-w-[1500px] lg:-mt-52" />
+      )}
+    </>
   );
 }
