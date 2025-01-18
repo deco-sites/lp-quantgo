@@ -10,6 +10,16 @@ export default {
       animation: {
         sliding: "sliding 30s linear infinite",
       },
+      fontFamily: {
+        "primary": "'Inter', sans-serif",
+        "secondary": "'Poppins', sans-serif",
+      },
+      colors: {
+        "white": "#ffffff",
+        "black": "#000000",
+        "dark-blue": "#10171f",
+        "light-blue": "#0074ff",
+      },
       keyframes: {
         sliding: {
           "0%": { transform: "translateX(0)" },
