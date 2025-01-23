@@ -146,7 +146,12 @@
       }
     },
     {
-      "__resolveType": "Footer"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/AboutUs.tsx",
+        "description": "QuantGO é o primeiro software de automação de estratégias quantitativas no Brasil. Foi desenvolvido para facilitar a busca e gerenciamento das operações de Long &amp; Short pelos métodos de Cointegração e Correlação.\n<br /><br />\nNo QuantGO você pode buscar operações por meio de filtros avançados e analisar as melhores oportunidades de acordo com seu perfil, estimar e acompanhar suas operações.\n<br /><br />\nTudo isso em tempo real e de forma simples sem a necessidade de instalar nada pois o QuantGO é 100% web. ",
+        "title": "O que é QuantGO?"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

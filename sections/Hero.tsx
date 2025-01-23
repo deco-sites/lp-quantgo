@@ -25,7 +25,6 @@ export interface Props {
   ctaButton: CTAProps;
 }
 
-
 export default function HeroFlats({
   title,
   description,
