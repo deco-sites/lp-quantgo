@@ -19,6 +19,7 @@ export default {
         "black": "#000000",
         "dark-blue": "#10171f",
         "light-blue": "#0074ff",
+        "dark-green": "#163300"
       },
       keyframes: {
         sliding: {

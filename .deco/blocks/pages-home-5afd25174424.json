@@ -152,6 +152,92 @@
         "description": "QuantGO é o primeiro software de automação de estratégias quantitativas no Brasil. Foi desenvolvido para facilitar a busca e gerenciamento das operações de Long &amp; Short pelos métodos de Cointegração e Correlação.\n<br /><br />\nNo QuantGO você pode buscar operações por meio de filtros avançados e analisar as melhores oportunidades de acordo com seu perfil, estimar e acompanhar suas operações.\n<br /><br />\nTudo isso em tempo real e de forma simples sem a necessidade de instalar nada pois o QuantGO é 100% web. ",
         "title": "O que é QuantGO?"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/WhatDoWeDo.tsx",
+        "title": "O que fazemos?",
+        "items": [
+          {
+            "title": "Análise de Operações",
+            "description": "Você pode analisar varias operações trazendo toda a grade de diferentes períodos da operação, gráficos de resíduo, Beta Rotation, teste de fisher, meia-vida"
+          },
+          {
+            "title": "Filtros",
+            "description": "Salve um filtro pré-selecionado e busque suas operações de forma rápida e simples."
+          },
+          {
+            "title": "Simulador",
+            "description": "São geradas milhares de operações com as mais diversas possibilidades de arbitragem que você pode simular as entradas dos pares  e acompanhar com o preço real do mercado."
+          },
+          {
+            "title": "Estimativa Financeira de Operações",
+            "description": "Com o QuantGO LS você poderá estimar o retorno das operações, quantidade de ativos a serem operados, capital alocado nas operações, P/L estimado de acordo com desvio selecionado, obter o coeficientes de entradas e saída das operações."
+          },
+          {
+            "title": "Robô",
+            "description": "As operações podem ser feitas manualmente ou também via robô, para isso o QuantGO-LS fornece o arquivo para importar diretamente no robô de forma simples e rápida, podendo deixar a operação apregoando tanto na entrada como na saída."
+          }
+        ],
+        "image": "https://data.decoassets.com/lp-quantgo/6727a8e2-8bdb-4fdd-814a-2d4211d27fdd/imagem_2025-01-23_221118998.png",
+        "firstColumn": [
+          {
+            "title": "Análise de Operações",
+            "description": "Você pode analisar varias operações trazendo toda a grade de diferentes períodos da operação, gráficos de resíduo, Beta Rotation, teste de fisher, meia-vida"
+          },
+          {
+            "title": "Simulador",
+            "description": "São geradas milhares de operações com as mais diversas possibilidades de arbitragem que você pode simular as entradas dos pares  e acompanhar com o preço real do mercado."
+          },
+          {
+            "title": "Robô",
+            "description": "As operações podem ser feitas manualmente ou também via robô, para isso o QuantGO-LS fornece o arquivo para importar diretamente no robô de forma simples e rápida, podendo deixar a operação apregoando tanto na entrada como na saída."
+          }
+        ],
+        "secondColumn": [
+          {
+            "title": "Filtros",
+            "description": "Salve um filtro pré-selecionado e busque suas operações de forma rápida e simples."
+          },
+          {
+            "title": "Estimativa Financeira de Operações",
+            "description": "Com o QuantGO LS você poderá estimar o retorno das operações, quantidade de ativos a serem operados, capital alocado nas operações, P/L estimado de acordo com desvio selecionado, obter o coeficientes de entradas e saída das operações."
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Footer.tsx",
+        "subscribe": {},
+        "logo": "https://data.decoassets.com/lp-quantgo/8402c190-a80e-4365-8297-6c7095e7c765/imagem_2025-01-23_230232963.png",
+        "copyright": "©2025 QuantGO",
+        "social": [
+          {
+            "title": "Instagram",
+            "icon": "https://data.decoassets.com/lp-quantgo/eb7b3215-7d50-4cdb-8952-56f1474b274b/imagem_2025-01-23_230326469.png",
+            "width": 27,
+            "height": 27,
+            "href": "https://www.instagram.com/quantgo/"
+          },
+          {
+            "title": "YouTube",
+            "icon": "https://data.decoassets.com/lp-quantgo/3b87a5a0-1bca-4faa-adcc-6d27d0f7d842/imagem_2025-01-23_230433232.png",
+            "href": "https://www.youtube.com/@QuantGO/",
+            "width": 34,
+            "height": 34
+          },
+          {
+            "title": "Blog",
+            "icon": "https://data.decoassets.com/lp-quantgo/388f68e5-6ff8-4a9d-a311-366255eed404/imagem_2025-01-23_230545314.png",
+            "width": 29,
+            "height": 29,
+            "href": "https://www.quantgo.com.br/blog/"
+          }
+        ]
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
