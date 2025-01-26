@@ -42,7 +42,7 @@ function WhatDoWeDo({ title, firstColumn, secondColumn, image }: Props) {
             <h1 class="font-primary font-bold text-white text-5xl text-center mb-12">
                 {title}
             </h1>
-            <div class="flex flex-col items-center justify-center mb-8 gap-y-12 md:flex-row md:gap-x-14 md:items-start">
+            <div class="flex flex-col items-center justify-center gap-y-12 md:flex-row md:gap-x-14 md:items-start sm:mb-8">
                 <div class="flex flex-col items-center justify-center gap-12">
                     {firstColumn.map((items) => (
                         <Item {...items} />

@@ -210,6 +210,15 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Newsletter.tsx",
+        "title": "Quero me cadastrar agora!",
+        "optInText": "Concordo em fornecer meus dados para receber conteúdos e ofertas por e-mail ou outros meios.",
+        "ctaText": "Cadastrar"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Footer.tsx",
         "subscribe": {},
         "logo": "https://data.decoassets.com/lp-quantgo/8402c190-a80e-4365-8297-6c7095e7c765/imagem_2025-01-23_230232963.png",

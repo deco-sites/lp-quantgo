@@ -90,7 +90,13 @@ export default function HeroFlats({
         </div>
       </section>
       {image && (
-        <img src={image.src} alt={image.alt} class="w-full mx-auto max-w-lg lg:max-w-[1500px] lg:-mt-52" />
+        <span class="block w-full bg-dark-blue mb-4 lg:bg-transparent lg:mb-0">
+          <img
+            src={image.src}
+            alt={image.alt}
+            class="w-full mx-auto max-w-lg lg:max-w-[1500px] lg:-mt-52 "
+          />
+        </span>
       )}
     </>
   );
